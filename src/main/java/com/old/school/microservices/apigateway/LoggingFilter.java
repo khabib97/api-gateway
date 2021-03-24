@@ -18,5 +18,7 @@ public class LoggingFilter implements GlobalFilter{
 		logger.info("Path of the request received - {}", exchange.getRequest().getPath());;
 		return chain.filter(exchange);
 	}
+	
+	//Need to implement authentication feature and securing api
 
 }
